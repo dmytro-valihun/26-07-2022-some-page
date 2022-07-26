@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: red;
+}
+
+.container {
+    min-width: 375px;
+    max-width: 1051px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* _________ header _________ */
+
+.header { 
+    position: relative;
+    background: url(../img/main-page.jpg) top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header__logo {
+    position: absolute;
+    top: 30px;
+    right: calc(100% - 90%);
+}
+
+.header__h1 {
+    position: absolute;
+    padding-right: 30px;
+    bottom: 40px;
+}
+
+.title-h1 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 460px) {
+    .title-h1 {
+        font-size: 61px;
+        line-height: 61px;
+    }
+}
+
+/* __________ main ____________ */
+
+.text-on-blue-bg {
+    background: #14475F;
+}
+
+.text-on-blue-bg p {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #FFFFFF;
+}
+
+.section-1 {
+    padding: 30px 0;
+}
+
+.section-1 h2 {
+    font-size: 30px;
+    line-height: 37px;
+    color: #14475F;
+    padding-bottom: 10px;
+}
+
+.section-1__container > p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #414042;
+}
+
+.section-1__container p:first-of-type {
+    padding-bottom: 40px;
+}
+.section-1__container p:last-of-type {
+    padding-bottom: 20px;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 30px;
+    } 
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    min-height: 268px;
+    background-color: #1085A9;
+}
+
+.cards:first-child::after {
+    content: "1";
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 162px;
+    line-height: 162px;
+    color: #2891B2;
+}
+
+.cards:nth-child(2)::after {
+    content: "2";
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 162px;
+    line-height: 162px;
+    color: #2891B2;
+}
+
+.cards:nth-child(3)::after {
+    content: "3";
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 162px;
+    line-height: 162px;
+    color: #2891B2;
+}
+
+.cards:last-child::after {
+    content: "4";
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 162px;
+    line-height: 162px;
+    color: #2891B2;
+}
+
+.cards-svg {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cards p {
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
+.little-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.cards a {
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: auto;
+}
+
+.cards a:hover path {
+    fill: red;
+}
+
+.cards span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+/* _____________ footer ____________ */
+
+.contacts {
+    background-color: #87C5E0;
+}
+
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: min-content;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+.contacts-wrapper div {
+padding: 30px 0;
+}
+
+.contacts h2 {
+    font-size: 16px;
+    line-height: 150%;
+    color: #231F20;
+    padding-bottom: 8px;
+}
+
+.contacts p,
+.contacts a {
+    font-size: 14px;
+    line-height: 150%;
+    color: #231F20;
+}
+
+.footer-middle {
+    background: #14475F;
+}
+
+.footer-middle p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.unsubscribe {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.unsubscribe a {
+    font-size: 13px;
+    line-height: 150%;
+    color: #14475F;
+}
